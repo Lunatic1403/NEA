@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #86BBD8;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    align-items: center;
+    padding: 0 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    padding: 0 15px;
+    color: #1E1E24;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(231, 234, 236);
+}
+
+main, footer {
+    padding: 0 15px;
+    max-width: 1170px;
+    margin: 0 auto 60px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid rgb(54, 138, 177);
+    margin: 15px 0;
+}
+
+#content-of-nea table {
+    max-width: 760px;
+    min-width: 600px;
+}
+
+#assessment-criteria table{
+    width: 100%;
+    min-width: 850px;
+}
+
+td {
+    width: 50%;
+    vertical-align: top;
+}
+
+th, td {
+    padding: 7px;
+    border: 1px solid rgb(54, 138, 177);
+}
+
+ol {
+    margin-left: 20px;
+}
+
+table ul {
+    margin-left: 20px;
+}
+
+main div {
+    padding-top: 90px;
+}
+
+main div:not(:first-of-type) {
+    margin-top: -50px;
+}
+
+.exemplar-link, .footer-link {
+    color: #648fa7;
+}
+
+#exemplars ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+footer {
+    font-size: 14px;
+}
