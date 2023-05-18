@@ -1,5 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
+@media only screen and (max-device-width: 600px) {
+    .column.one, .column.two {
+        width: 50%;
+    }
+    .column.three, .column.four {
+        display: none;
+    }
+    .mobile-second-table {
+        display: block;
+        margin-top: -30px !important;
+    }
+    .mobile-second-table th:first-of-type, .mobile-second-table th:nth-of-type(2) {
+        border-top: 0;
+    }
+    table {
+        margin: 30px 0;
+    }
+    header {
+        justify-content: space-around;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+    .remove-top-margin {
+        margin-top: -30px;
+    }
+    #exemplars li {
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (min-device-width: 601px) {
+    .column.one {
+        width: 20%;
+    }
+    .column.two {
+        width: 21%;
+    }
+    .column.three {
+        width: 27%;
+    }
+    .column.four {
+        width: 32%;
+    }
+    .mobile-second-table {
+        display: none;
+    }
+    table {
+        margin: 15px 0;
+    }
+    header {
+        justify-content: flex-end;
+        padding: 0 30px;
+        font-size: 20px;
+    }
+    .remove-top-margin {
+        margin-top: -15px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +74,8 @@ header {
     width: 100%;
     background-color: #86BBD8;
     display: flex;
-    justify-content: flex-end;
     height: 60px;
     align-items: center;
-    padding: 0 30px;
 }
 
 a {
@@ -29,7 +86,6 @@ a {
     padding: 0 15px;
     color: #1E1E24;
     font-weight: bold;
-    font-size: 20px;
 }
 
 body {
@@ -37,27 +93,20 @@ body {
 }
 
 main, footer {
-    padding: 0 15px;
     max-width: 1170px;
     margin: 0 auto 60px;
+    width: 100vw;
+    padding: 0 15px;
 }
 
 table {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
-    border: 1px solid rgb(54, 138, 177);
-    margin: 15px 0;
 }
 
 #content-of-nea table {
     max-width: 760px;
-    min-width: 600px;
-}
-
-#assessment-criteria table{
-    width: 100%;
-    min-width: 850px;
 }
 
 td {
@@ -68,6 +117,7 @@ td {
 th, td {
     padding: 7px;
     border: 1px solid rgb(54, 138, 177);
+    border-collapse: collapse;
 }
 
 ol {
@@ -97,4 +147,8 @@ main div:not(:first-of-type) {
 
 footer {
     font-size: 14px;
+}
+
+.remove-top-margin th:first-of-type {
+    border-top: none;
 }
