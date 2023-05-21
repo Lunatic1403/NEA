@@ -19,14 +19,20 @@
     }
     header {
         justify-content: space-around;
-        padding: 0 15px;
-        font-size: 16px;
+        padding: 0 5px;
+        font-size: 17px;
     }
     .remove-top-margin {
         margin-top: -30px;
     }
     #exemplars li {
         margin: 5px 0;
+    }
+}
+
+@media only screen and (max-device-width: 382px) {
+    header {
+        font-size: 15px;
     }
 }
 
