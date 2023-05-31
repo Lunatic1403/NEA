@@ -73,6 +73,14 @@
     scroll-behavior: smooth;
 }
 
+main *::selection {
+    background-color: rgb(149, 243, 223);
+}
+
+header *::selection {
+    background-color: transparent;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -92,6 +100,10 @@ a {
     padding: 0 15px;
     color: #1E1E24;
     font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #5d5d64;
 }
 
 body {
@@ -144,6 +156,10 @@ main div:not(:first-of-type) {
 
 .exemplar-link, .footer-link {
     color: #648fa7;
+}
+
+.exemplar-link:hover, .footer-link:hover {
+    color: #95c3db;
 }
 
 #exemplars ul {
